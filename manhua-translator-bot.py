@@ -1,5 +1,6 @@
 import tempfile
 import streamlit as st
+
 from agno.agent import Agent
 from agno.media import Image
 from agno.models.openai import OpenAIChat
@@ -193,7 +194,7 @@ def main() -> None:
         elif not translation_preferences["uploaded_image"]:
             st.error("Please upload an image to proceed.")
         else:
-            with st.spinner("Translating dialogue from your image..."):
+            with st.spinner("Translating dialogue from your panel..."):
                 # Save image to temporary path
                 with tempfile.NamedTemporaryFile(delete=False, suffix=".jpg") as tmp:
                     tmp.write(translation_preferences["uploaded_image"].getvalue())
