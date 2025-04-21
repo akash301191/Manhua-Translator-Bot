@@ -186,7 +186,7 @@ def main() -> None:
     st.markdown("---")
 
     # Translation Trigger Button
-    if st.button("🌐 Translate Manhua"):
+    if st.button("🌐 Translate Manhua Panel"):
         if not hasattr(st.session_state, "openai_api_key"):
             st.error("Please provide your OpenAI API key in the sidebar.")
         elif not hasattr(st.session_state, "deepseek_api_key"):
