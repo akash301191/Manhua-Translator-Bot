@@ -111,7 +111,7 @@ def generate_translations(preferences):
     tone = preferences["translation_tone"]
     include_notes = preferences["include_word_notes"]
 
-    if include_notes:
+    if include_notes == "Yes":
         footnote_instruction = """
 Include a footnotes section after the translated bubbles, titled '📘 Footnotes'. 
 List important or culturally significant word-level translations as follows:
